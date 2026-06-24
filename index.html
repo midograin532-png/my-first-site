@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html>
     <body>
-        <h1>الة حاسبة بسيطة</h1>
-        <input type="number" id="a" placeholder="الرقم الاول">
+        <h1>آلة حاسبة بسيطة</h1>
+        <input type="number" id="a" placeholder="الرقم الأول">
         <input type="number" id="b" placeholder="الرقم الثاني">
-        <botton onclick="calc()">اجمع</botton>
-        <p id="resolt"></p>
+        <button type="button" onclick="calc()">كليكي هنا</button>
+        <p id="result"></p>
+
         <script>
-            function calc()^{
+            function calc() {
                 let a = Number(document.getElementById("a").value);
                 let b = Number(document.getElementById("b").value);
                 document.getElementById("result").innerText = "النتيجة = " + (a + b);
