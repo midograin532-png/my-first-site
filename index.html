@@ -68,3 +68,10 @@ button:hover{
 
 <button type="button" onclick="calc()">كليكي هنا</button>
         <p id="result"></p>
+    <script>
+            function calc() {
+                let a = Number(document.getElementById("a").value);
+                let b = Number(document.getElementById("b").value);
+                document.getElementById("result").innerText = "النتيجة = " + (a + b);
+            }
+        </script>
