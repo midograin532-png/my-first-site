@@ -1,18 +1,69 @@
 <!DOCTYPE html>
-<html>
-    <body>
-        <h1>ما نحسبش وبلع </h1>
-        <input type="number" id="a" placeholder="اكتب قود هنا">
-        <input type="number" id="b" placeholder="اوهنا نيميرو زاوج   زيد نيميروك">
-        <button type="button" onclick="calc()">بشوي برك</button>
-        <p id="result"></p>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<title>آلة حاسبة بسيطة</title>
 
-        <script>
-            function calc() {
-                let a = Number(document.getElementById("a").value);
-                let b = Number(document.getElementById("b").value);
-                document.getElementById("result").innerText = "زيزيلطا احبيبي = " + (a + b);
-            }
-        </script>
-    </body>
-</html>
+<style>
+body{
+    background:#f0f8ff;
+    font-family:Arial,sans-serif;
+    text-align:center;
+    margin-top:100px;
+}
+
+h1{
+    color:#0066cc;
+}
+
+input{
+    width:220px;
+    padding:10px;
+    margin:10px;
+    border:2px solid #0066cc;
+    border-radius:10px;
+    font-size:16px;
+}
+
+button{
+    background:#0066cc;
+    color:white;
+    border:none;
+    padding:10px 20px;
+    border-radius:10px;
+    font-size:16px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#004c99;
+}
+
+#resultat{
+    display:none;
+    width:220px;
+    margin:10px auto;
+    padding:12px;
+    background:white;
+    border:2px solid #0066cc;
+    border-radius:10px;
+    color:green;
+    font-size:20px;
+    font-weight:bold;
+}
+</style>
+</head>
+
+<body>
+
+<h1>مححح ليكم</h1>
+
+<input type="number" id="num1" placeholder="الرقم تاعك هه نقصر ">
+
+<br>
+
+<input type="number" id="num2" placeholder="الرقم الثاني">
+
+<br>
+
+<button onclick="cal
